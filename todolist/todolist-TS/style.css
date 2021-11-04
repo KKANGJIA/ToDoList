@@ -1,0 +1,102 @@
+* {
+  box-sizing: border-box;
+}
+
+button {
+  outline: none;
+  border: 0px;
+  background-color: transparent;
+  font-size: 15px;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.section {
+  background-color: #a2d2ff8f;
+  height: 500px;
+  width: 350px;
+  margin: auto;
+  border-radius: 10px;
+}
+
+.header {
+  text-align: center;
+  height: 70px;
+  line-height: 40px;
+  font-size: 25px;
+  color: white;
+}
+
+input {
+  font-size: 15px;
+  outline: none;
+  border: 0px;
+  height: 40px;
+  border-radius: 10px;
+  margin-top: 15px;
+  padding-left: 10px;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+}
+
+.contents {
+  background-color: #bde0fe;
+  height: 480px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  list-style: none;
+  padding: 0px 0px;
+  margin: 0px;
+  border-radius: 0px 0px 10px 10px;
+}
+
+.items {
+  padding: 0px 30px;
+}
+
+.item {
+  height: 45px;
+  display: flex;
+  background-color: white;
+  margin-top: 10px;
+  padding-left: 20px;
+  border-radius: 10px;
+  line-height: 17px;
+  -webkit-box-shadow: 2px 2px 2px 1px rgba(255, 255, 255, 255);
+  box-shadow: 2px 2px 2px 1px rgba(88, 87, 87, 0.329);
+}
+
+.item_row {
+  list-style: none;
+}
+
+.item-name {
+  width: 215px;
+  font-size: 15px;
+}
+
+.fa-trash {
+  margin-right: 10px;
+  line-height: 55px;
+  cursor: pointer;
+  color: rgb(0, 0, 0);
+  height: 20px;
+}
+
+.fa-thumbs-up {
+  cursor: pointer;
+  color: rgb(0, 0, 0);
+}
+
+.fa-plus-square {
+  font-size: 25px;
+  vertical-align: middle;
+  margin: 0px;
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+}
