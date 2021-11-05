@@ -1,6 +1,7 @@
 import React from 'react';
 import styled, { css } from 'styled-components';
 import { MdDone, MdDelete } from 'react-icons/md';
+import { Remover, Toggle, useTodoDispatch } from '../TodoContext';
 
 const Remove = styled.div`
   display: flex;
@@ -59,15 +60,21 @@ const Text = styled.div`
 `;
 
 function TodoItem({ id, done, text }) {
+  const dispatch = useTodoDispatch();
+
   return (
     <TodoItemBlock>
-      <CheckCircle done={done}>{done && <MdDone />}</CheckCircle>
+      <CheckCircle done={done} onClick={() => dispatch( { type: Toggle, id})}>
+        {done && <MdDone />}
+      </CheckCircle>
       <Text done={done}>{text}</Text>
-      <Remove>
+      <Remove onClick={() => dispatch({ type: Remover, id })}>
         <MdDelete />
       </Remove>
     </TodoItemBlock>
   );
 }
 
-export default TodoItem;
+//다른 항목이 업데이트될 때, 
+//불필요한 렌더링을 방지하게 되어 성능을 최적화할 수 있다.
+export default React.memo(TodoItem);

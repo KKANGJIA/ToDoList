@@ -1,7 +1,7 @@
-# 리액트를 사용하여 멋진 투두리스트 by velopert
+## 리액트를 사용하여 멋진 투두리스트 by velopert
 
 
-## 배울 내용
+### 배울 내용
 1. styled-components 를 통한 컴포넌트 스타일링
 2. Context API 를 사용한 전역 상태 관리
 3. 배열 상태 다루기

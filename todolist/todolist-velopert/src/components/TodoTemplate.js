@@ -19,6 +19,8 @@ const TodoTemplateBlock = styled.div`
 `;
 
 function TodoTemplate({ children }) {
+  //무슨 하위 컴포넌트가 들어올지 몰라서 {children} = props을 비구조할당으로 작성한 '예약어'
+  //props.children으로 작성해도 되는 것
   return <TodoTemplateBlock>{children}</TodoTemplateBlock>;
 }
 
